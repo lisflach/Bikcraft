@@ -16,7 +16,7 @@
     top:-180px;
     text-align: center;
     color: #fff;
-    margin-bottom: -56;
+    margin-bottom: -56px;
 }
 
 .produtos_item h2:after, .produtos_item h2:before{
@@ -47,7 +47,6 @@
     line-height: 25px;
     height: 180px;
     padding: 30px 40px;
-
 }
 
 .produto_info ul li{
