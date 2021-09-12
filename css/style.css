@@ -26,7 +26,7 @@ img {
 
 .btn:hover {
     color: #fff;
-    border-color: #fec63e;
+    border-color: #fff;
 }
 
 .btn.btn-preto:hover {
@@ -118,10 +118,10 @@ img {
     width: 100%;
     height: 380px;
     background: url("../img/bg.jpg") no-repeat center;
-    background: cover;
+    background-size: cover;
     margin-top: 92px;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .introducao h1{
@@ -159,6 +159,7 @@ img {
     letter-spacing: .1em;
 }
 
+/* introdução interna */
 .introducao-interna {    /* Aula da pagina SOBRE - Introdução Interna - das outras paginas, sobre e etc... */
     width: 100%;
     margin-top: 92px;
@@ -329,7 +330,6 @@ text-align: center;
 
 .quote .quote-externo {
     max-width: 400px;
-    padding-top: 40px;
 }
 
 
@@ -361,7 +361,7 @@ text-align: center;
 }
 
 .footer_historia{
-    padding-right: 50px;
+    padding-right: 40px;
 }
 
 .footer_contato ul li{
@@ -391,5 +391,73 @@ text-align: center;
     padding: 20px 0;
 }
 
-/*proxima aula: PAgina de 'Sobre" */
 
+/* CSS Essencial para JS do Slide  -Quote */
+
+.js [data-slide] {
+    position: relative;
+  }
+.js [data-slide] > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+  }
+.js [data-slide] > .active {
+    position: relative;
+    opacity: 1;
+    transition: opacity 500ms;
+  }
+
+.js [data-slide-nav] {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    border: none;
+    padding: 0px;
+    border-radius: 6px;
+    text-indent: -99px;
+    overflow: hidden;
+    background: #1d1d1d;
+}
+.js [data-slide-nav] button.active {
+    background: #fec63e;
+}
+
+
+.js [data-anime] {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  .js .fadeInDown {
+    transform: translate3d(0, -20px, 0);
+} 
+
+  .js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
+
+  }
+
+.nao-aparece {
+    visibility: hidden;
+    position: absolute;
+    height: 0px;
+}
+
+#form-sucesso {
+    color: #31aa39;
+}
+
+#form-erro {
+    color: #f64540;
+
+}
